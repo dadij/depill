@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e
+
+cd ~/test_repo
+
+echo "[deploy] stopping old process..."
+if [[ -f main.pid ]]; then
+    kill "$(cat main.pid)" 2>/dev/null || true
+    rm -f main.pid
+fi
+
+echo "[deploy] building..."
+g++ -std=c++20 -O2 main.cpp -o main
+
+echo "[deploy] starting..."
+nohup ./main > app.log 2>&1 &
+echo $! > main.pid
+
+echo "[deploy] done"
