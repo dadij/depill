@@ -32,7 +32,7 @@ Clone the repo:
 git clone https://github.com/dadij/depill.git myproj
 cd myproj
 ```
-Modify in post-update:
+Modify post-update file:
 - directory path (defaults to ~/myproj)
 - compile command (defaults to g++, output should be named main)
 
@@ -43,6 +43,7 @@ Run setup:
 ```
 
 This will:
+- wipe and init git
 - allow pushing into the working tree
 - install the Git hook
 
