@@ -32,8 +32,9 @@ Clone the repo:
 git clone https://github.com/dadij/depill.git myproj
 cd myproj
 ```
-
-Modify compile command in post-update (defaults to g++, output should be named main)
+Modify in post-update:
+- directory path (defaults to ~/myproj)
+- compile command (defaults to g++, output should be named main)
 
 Run setup:
 
@@ -45,12 +46,22 @@ This will:
 - allow pushing into the working tree
 - install the Git hook
 
----
-
-## Add remote (on your local machine)
+Run clean up:
 
 ```bash
-git remote add server user@host:myproj
+./cleanup.sh
+```
+
+---
+## Clone from server (on your local machine)
+```bash
+git clone user@host:path/to/myproj myproj
+```
+
+## Add remote
+
+```bash
+git remote add server user@host:path/to/myproj
 ```
 ---
 
