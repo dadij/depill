@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
+# change this to project path
 cd ~/myproj
 
 echo "[deploy] stopping old process..."

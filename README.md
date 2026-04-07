@@ -49,7 +49,7 @@ This will:
 Run clean up:
 
 ```bash
-./cleanup.sh
+./clean.sh
 ```
 This will:
 - remove setup files
@@ -59,12 +59,6 @@ This will:
 ## Clone from server (on your local machine)
 ```bash
 git clone user@host:path/to/myproj myproj
-```
-
-## Add remote
-
-```bash
-git remote add server user@host:path/to/myproj
 ```
 ---
 
