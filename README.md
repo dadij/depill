@@ -67,7 +67,9 @@ git clone user@host:path/to/myproj myproj
 
 Push your code:
 
+```bash
 git push origin main
+```
 
 That’s it.
 
