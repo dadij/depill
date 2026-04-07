@@ -33,7 +33,7 @@ git clone https://github.com/dadij/depill.git myproj
 cd myproj
 ```
 
-Modify compile command in setup.sh (defaults to g++, output should be named main)
+Modify compile command in post-update (defaults to g++, output should be named main)
 
 Run setup:
 
