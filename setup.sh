@@ -3,8 +3,10 @@ set -e
 
 HOOK_PATH=".git/hooks/post-update"
 
-echo "[setup] changing git config..."
+echo "[setup] re-initializing git with correct config..."
 
+rm -rf .git
+git init
 git config receive.denyCurrentBranch updateInstead
 
 echo "[setup] installing git hook..."
