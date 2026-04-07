@@ -73,16 +73,16 @@ The server will:
 
 If your program runs continuously, this should:
 
-# stop previous instance
+### stop previous instance
 if [[ -f main.pid ]]; then
     kill "$(cat main.pid)" 2>/dev/null || true
     rm -f main.pid
 fi
 
-# build
+### build
 g++ -std=c++20 -O2 main.cpp -o main
 
-# run in background
+### run in background
 nohup ./main > app.log 2>&1 &
 echo $! > main.pid
 
