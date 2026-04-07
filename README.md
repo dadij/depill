@@ -66,7 +66,7 @@ git clone user@host:path/to/myproj myproj
 
 Push your code:
 
-git push server main
+git push origin main
 
 That’s it.
 
@@ -116,6 +116,6 @@ tail -f app.log
 
 ## TL;DR
 
-git push server main
+git push origin main
 
 → your code builds and runs on the server
