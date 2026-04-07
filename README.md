@@ -51,6 +51,9 @@ Run clean up:
 ```bash
 ./cleanup.sh
 ```
+This will:
+- remove setup files
+- commit git changes so repo can be cloned on local machine
 
 ---
 ## Clone from server (on your local machine)

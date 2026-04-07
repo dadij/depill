@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-cd ~/test_repo
+cd ~/myproj
 
 echo "[deploy] stopping old process..."
 if [[ -f main.pid ]]; then
