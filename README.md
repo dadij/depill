@@ -76,7 +76,9 @@ That’s it.
 The server will:
 1. receive the push
 2. update files
-3. run redeploy script 
+3. kill running process if running
+4. rebuild
+5. run new binary 
 
 ---
 
