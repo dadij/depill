@@ -32,7 +32,7 @@ Clone the repo:
 git clone https://github.com/dadij/depill.git myproj
 cd myproj
 ```
-Modify post-update file:
+Modify the 'post-update' file:
 - directory path (defaults to ~/myproj)
 - compile command (defaults to g++, output should be named main)
 
